@@ -554,37 +554,43 @@ h4{
     margin-right: 150px;
 }
 
- /*@media screen and (max-width: 1000px)
+ @media all and (max-width: 800px)
 {
-    nav 
-    {
-        width: auto;
-        text-align: left;
-    }
-    nav ul 
-    {
-        flex-direction: column;
-    }
-    nav li
-    {
-        padding-left: 4px;
-        
-    }
+   #bloc_page
+   {
+   width: auto; 
+   }
+   #entete
+   {
+    width: auto;
+    text-align: left;
+    flex-direction: column;
+           
+   }
+   #ancres
+   {
+       flex-direction: column;
+       margin-top: 0px;
+       margin-left: 0px;
+       
+   }
+   #inscription
+   {
+   margin-left: 45px;
+   margin-top: 0px;
    
-    nav a
-    { 
-        font: size 1.1em;
-    }
-    
-    nav a:hover
-    {
-        border: bottom 0;
-    }
-
-    
+   }
+   nav li 
+   {
+    padding-left: 4px;
+   }
+   nav a 
+   {
+       font-size: 1.1em;
+   }
+   nav a:hover
+   {
+       border-bottom: 0;
+       border-top: none;
+   }
 }
-button{
-    background-color: blue;
-    color: white;
-}
-*/
