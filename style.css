@@ -56,9 +56,10 @@ button{
     border: solid 1px #deebff;
     border-radius: 10px;
     padding: 5px;
-    padding-right: 13px;
-    padding-left: 13px;
+    padding-right: 5px;
+    padding-left: 5px;
     padding-bottom: 8px;
+    width: 80px;
 }
 #rechercher{
     border-width:0px;
