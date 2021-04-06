@@ -4,7 +4,7 @@ body {
 
     header{
         display:flex;
-        justify-content: space-between;
+       
         margin-top: 30px; 
     }
     
@@ -478,7 +478,7 @@ padding-bottom: 0px;
     padding-left: 15px;
 }
 
-#actvités {
+#activités {
     display: flex;
    
 }
@@ -554,28 +554,43 @@ h4{
     margin-right: 150px;
 }
 
- @media all and (max-width: 800px)
+ @media all and (max-width: 1024px)
 {
    #bloc_page
    {
    width: auto; 
    }
+   header
+   {
+       flex-direction: column;
+
+   }
+   #logo img{
+    margin-right: 0px;
+    width: auto;
+   }
+   
    #entete
    {
     width: auto;
     text-align: left;
     flex-direction: column;
+    margin-left: 300px;
            
    }
    #ancres
    {
+       width: auto;
        flex-direction: column;
        margin-top: 0px;
        margin-left: 0px;
        
    }
+
+
    #inscription
    {
+       width: auto;
    margin-left: 45px;
    margin-top: 0px;
    
@@ -593,4 +608,221 @@ h4{
        border-bottom: 0;
        border-top: none;
    }
+   #liens ul{
+    
+    text-align: left;
+    flex-direction: column;
+   }
+   section
+   {
+       width: auto;
+       flex-direction: column;
+       width: auto;
+   }
+   #conteneur
+   {
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 50px;
+    
+
+   }
+   #booking1{
+   flex-grow: 1;
+   flex-shrink: 1;
+   width: auto;
+   margin-bottom: 5px;
+   }
+
+   
+   #booking2{
+       flex-grow: 1;
+    flex-shrink: 1;
+    width: auto;
+    margin-bottom: 5px;
+   }
+
+   .card1, .card2, .card3, .card4, .card5, .card6 
+   {
+    height: auto;
+    width:25%;
+    max-width: 200px;
+    border: solid 1px #e6e1e1;
+    border-radius: 20px;
+    background-color: white;
+    
+   }
+   #conteneur img
+   {
+    max-height: 150px;
+    width:80%;
+    max-width: 200px;  
+   }
+   #conteneur h3 
+   {
+    font-size: 0.8em;
+    max-width: 200px;
+   }
+   #conteneur p 
+   {
+    height: auto;
+    width:80%;
+    font-size: 0.8em;
+    max-width: 200px;
+   }
+
+
+   aside
+   {
+       width: 95%;
+       margin-bottom: 5px;
+       margin-top: 20px;
+       margin-left: 0px;
+   }
+
+   #activités {
+ flex-direction: column;
+ width: 95%;
+ margin-bottom: 50px;
+ width: auto;
+ margin-bottom: 5px;
+   
+}
+
+.card10{
+    height: auto;
+    width:50%;
+    max-width: 400px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+    margin-bottom: 10px;
+    margin-left: 100px;
+    padding:0px;
+
+}
+.card10 a img 
+{
+    max-height: 150px;
+    width:100%;
+    max-width: 400px;  
+}
+#act2{display: flex;}
+.card11{
+    height: 200px;
+    width:50%;
+    max-width: 500px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+    margin-right: 10px;
+}
+.card11 a img 
+{
+    max-height: 150px;
+    width: 100%;
+    max-width: 400px;  
+}
+
+.card12{
+    height: 200px;
+    width:50%;
+    max-width: 500px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+
+}
+.card12 a img 
+{
+    max-height: 150px;
+    width:100%;
+    max-width: 400px;  
+}
+
+.card13{
+    height: auto;
+    width:50%;
+    max-width: 400px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+    margin-left: 100px;
+    margin-bottom: 10px;
+    
+
+}
+.card13 a img 
+{
+    max-height: 150px;
+    width:100%;
+    max-width: 400px;  
+}
+
+.card14{
+    height: 220px;
+    width:50%;
+    max-width: 400px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+    margin-right: 10px;
+
+}
+.card14 a img 
+{
+    max-height: 150px;
+    width:100%;
+    max-width: 400px;  
+}
+
+.card15{
+    height: 220px;
+    width:50%;
+    max-width: 400px;
+    background-color:white;
+    border-radius: 20px;
+    border: solid 1px #e6e1e1;
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);
+
+}
+.card15 a img 
+{
+    max-height: 150px;
+    width:100%;
+    max-width: 400px;  
+}
+#act4{display: flex;
+max-width: 420px;
+}
+
+/*#act4 a p
+{
+    font-size: 0.8em;
+    max-width: 200px;
+}*/
+
+footer
+{
+    width: auto;
+    padding-left: 0px;
+     
+    }
+
+#rang1, #rang2 {
+        margin-right: 10px;
+        padd
+
+}
+#rang1{
+    margin-left: 0px;
+    text-align: left;
+
+}
+
 }
