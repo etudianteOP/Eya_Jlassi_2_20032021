@@ -548,7 +548,7 @@ footer ul li {
     padding-bottom: 10px;
 }
 h4{
-    padding-left: 40px;
+    padding-left: 30px;
 }
 #rang1, #rang2 {
     margin-right: 150px;
@@ -575,7 +575,7 @@ h4{
     width: auto;
     text-align: left;
     flex-direction: column;
-    margin-left: 300px;
+    margin-left: 200px;
            
    }
    #ancres
@@ -811,17 +811,26 @@ footer
 {
     width: auto;
     padding-left: 0px;
-     
+     margin-left: 0px;
+     padding-bottom: 0px;
+     text-align: start;
+    }
+    footer ul {
+    text-align: start;
+    padding-left: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
     }
 
-#rang1, #rang2 
+#rang1, #rang2
 {
  margin-right: 10px;
+ margin-left: 0px;
+ text-align: start;
+ padding-left: 0px;
 }
-#rang1{
-    margin-left: 0px;
-    text-align: left;
-
+h4{
+    padding-left: 10px;
 }
 
 }
