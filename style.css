@@ -18,7 +18,6 @@ nav a:hover
 #ancres
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 0px;
     margin-left: 400px;
@@ -60,12 +59,26 @@ button{
     padding-left: 5px;
     padding-bottom: 8px;
     width: 80px;
-}
+    }
+    .btnIcon 
+    {
+       display: none;
+    }
 #rechercher{
     border-width:0px;
     border:none;
     padding: 5px;
     width: 130px;
+}
+#information
+{
+    display: flex;
+
+}
+#information i 
+{
+    margin-top: 15px;
+    margin-right: 10px;
 }
 ul{
     display: flex;
@@ -554,132 +567,252 @@ h4{
     margin-right: 150px;
 }
 
- @media all and (max-width: 1024px)
+ @media all and (max-width: 812px)
 {
-   #bloc_page
-   {
-   width: auto; 
-   }
-   header
-   {
-       flex-direction: column;
 
-   }
-   #logo img{
-    margin-right: 0px;
-    width: auto;
-   }
-   
-   #entete
-   {
-    width: auto;
-    text-align: left;
-    flex-direction: column;
-    margin-left: 200px;
-           
-   }
-   #ancres
-   {
-       width: auto;
-       flex-direction: column;
-       margin-top: 0px;
-       margin-left: 0px;
+    header
+    {
+        flex-direction: column;
+ 
+    }
+    body{
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    #logo img{
        
-   }
+        width: 50px;
+        height: 50px;
+    }
 
-
-   #inscription
+    #entete
+    {
+        flex-direction: row-reverse;
+    }
+    #ancres
    {
-       width: auto;
-   margin-left: 45px;
-   margin-top: 0px;
-   
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    margin: 0px;
+        
    }
-   nav li 
+   #ancres li a
    {
-    padding-left: 4px;
-   }
-   nav a 
-   {
+       padding-right: 75px;
        font-size: 1.1em;
    }
    nav a:hover
-   {
-       border-bottom: 0;
-       border-top: none;
-   }
-   #liens ul{
+{
+    color: #0065FC;
+    border-bottom: 3px  solid #0065FC;
+    padding-bottom: 12px;
+    border-top: none;
+    padding-top: none;
+    padding-left: 33px;
     
-    text-align: left;
+}
+    nav span{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+    
+    }
+    form {
+        border: solid 1px #e6e1e1;
+        border-radius: 10px;
+        width: 350px;
+        height: 35px;
+        padding: 0px;
+        margin-left: 10px;
+        margin-left: 10px;
+        display: flex;
+    }
+
+     button{
+        border-radius: 10px;
+        width: 40px;
+        margin-left: 170px;
+        height: 36px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        padding top:0px ;
+        padding-right: 5px;
+        
+    }
+    .btnRechercher{
+        display: none;
+    }
+    .map {
+        background-color: rgb(240, 235, 235);
+        color: hsl(214, 78%, 2%);
+        border: solid 1px #deebff;
+        border-radius: 5px;
+        padding: 3px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    .btnIcon 
+    {
+        display: initial;
+      
+    }
+       #sous_titre{ 
+           padding-left: 15px;
+
+      }
+      #Recherche h1{
+        padding-left: 15px;
+      }
+    #rechercher
+    {
+        border-width:0px;
+        border:none;
+        padding-left: 10px;
+        
+                
+    }
+    #information{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #information p
+{
+    text-align: justify;
+
+}
+
+    #Filtre
+    {
+        
     flex-direction: column;
+       
+    }
+    #titre{
+        margin-right: 200px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+       #liens ul{
+    
+        flex-wrap: wrap;
+           }
+
+           #information  {
+            text-align: justify;
+            
+            }
+
+   #bloc_page
+   {
+    margin: 0px;
+    padding: 0px; 
+    height: 500px; 
    }
+  
+   #logo img{
+    margin-right: 0px;
+        width: auto;
+   }
+   
    section
    {
        width: auto;
        flex-direction: column;
-       width: auto;
+       margin-top: 0px;
    }
+
    #conteneur
-   {
+{
     flex-direction: column;
-    width: 95%;
-    margin-bottom: 50px;
-    
+    width: 365px;
+    height: 2000px;
+    background-color:white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 5px ;
+    padding-left: 5px;
+    flex-wrap: wrap;
+}
 
-   }
    #booking1{
-   flex-grow: 1;
-   flex-shrink: 1;
    width: auto;
-   margin-bottom: 5px;
+   height: 1000px;
+   flex-direction: row;
+   padding-bottom: 0px;
    }
-
-   
    #booking2{
-       flex-grow: 1;
-    flex-shrink: 1;
     width: auto;
-    margin-bottom: 5px;
-   }
-
-   .card1, .card2, .card3, .card4, .card5, .card6 
-   {
-    height: auto;
-    width:25%;
-    max-width: 200px;
-    border: solid 1px #e6e1e1;
-    border-radius: 20px;
-    background-color: white;
+    flex-direction: row;
     
-   }
-   #conteneur img
-   {
-    max-height: 150px;
-    width:80%;
-    max-width: 200px;  
-   }
-   #conteneur h3 
-   {
-    font-size: 0.8em;
-    max-width: 200px;
-   }
-   #conteneur p 
-   {
-    height: auto;
-    width:80%;
-    font-size: 0.8em;
-    max-width: 200px;
-   }
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    box-shadow: 3px 3px 6px rgb(173, 167, 167);     
+    }
 
-
+    #conteneur img {
+   
+        width: 350px;  
+        height: 150px;
+    }
+    section {
+        flex-direction: column-reverse;
+    }
+    
    aside
    {
-       width: 95%;
+       width: 355px;
        margin-bottom: 5px;
-       margin-top: 20px;
-       margin-left: 0px;
+       margin-top: 10px;
+       margin-left: 10px;
+       margin-right: 10px;
+       height: 650px;
+   }
+   #top-aside {
+       margin-left: 15px;
+
+   }
+   .card7, .card8, .card9{
+       height: 180px;
+       margin-left: 5px;
+       margin-right: 5px;
+
    }
 
+   aside img {
+   
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    justify-content: center;
+    object-fit: cover;
+    height: 170px;
+    }
+
+    #stars7{
+        padding-top: 30px;
+    }
+    #stars8{
+        padding-top: 30px;
+    }
+    .card9 #part6 h3
+{
+line-height: 20px;
+padding-bottom: 0px;
+}
+  
    #activités {
  flex-direction: column;
  width: 95%;
@@ -708,16 +841,23 @@ h4{
     width:100%;
     max-width: 400px;  
 }
-#act2{display: flex;}
+
+#act2{
+
+    flex-direction: column;
+}
+
 .card11{
-    height: 200px;
+    height: auto;
     width:50%;
-    max-width: 500px;
+    max-width: 400px;
     background-color:white;
     border-radius: 20px;
     border: solid 1px #e6e1e1;
     box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    padding:0px;
 }
 .card11 a img 
 {
@@ -727,13 +867,16 @@ h4{
 }
 
 .card12{
-    height: 200px;
+    height: auto;
     width:50%;
-    max-width: 500px;
+    max-width: 400px;
     background-color:white;
     border-radius: 20px;
     border: solid 1px #e6e1e1;
     box-shadow: 3px 3px 6px rgb(173, 167, 167);
+    margin-bottom: 10px;
+    margin-left: 100px;
+    padding:0px;
 
 }
 .card12 a img 
@@ -764,14 +907,15 @@ h4{
 }
 
 .card14{
-    height: 220px;
+    height: auto;
     width:50%;
     max-width: 400px;
     background-color:white;
     border-radius: 20px;
     border: solid 1px #e6e1e1;
     box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-right: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px;
 
 }
 .card14 a img 
@@ -782,14 +926,15 @@ h4{
 }
 
 .card15{
-    height: 220px;
+    height: auto;
     width:50%;
     max-width: 400px;
     background-color:white;
     border-radius: 20px;
     border: solid 1px #e6e1e1;
     box-shadow: 3px 3px 6px rgb(173, 167, 167);
-
+    margin-left: 100px;
+    margin-bottom: 10px;
 }
 .card15 a img 
 {
@@ -797,19 +942,33 @@ h4{
     width:100%;
     max-width: 400px;  
 }
-#act4{display: flex;
-max-width: 420px;
-}
+#act4{flex-direction: column;
 
-/*#act4 a p
-{
-    font-size: 0.8em;
-    max-width: 200px;
-}*/
+    }
+
+    .card10, .card11, .card12, .card13, .card14, .card15 {
+        width: 350px;
+        margin-bottom: 10px;
+    margin-left: 0px;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    box-shadow: 3px 3px 6px rgb(173, 167, 167); 
+    margin-left: 10px;    
+        }
+        #act img {
+   
+            width: 350px;  
+            height: 150px;
+        }
+        
+
+
 
 footer
 {
     width: auto;
+    height: 450px;
+    flex-direction: column;
     padding-left: 0px;
      margin-left: 0px;
      padding-bottom: 0px;
@@ -832,5 +991,15 @@ footer
 h4{
     padding-left: 10px;
 }
+
+}
+
+@media all and (min-width: 683px) and (max-width: 1024px)
+{
+
+
+
+
+
 
 }
