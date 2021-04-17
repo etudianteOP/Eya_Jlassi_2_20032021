@@ -4,7 +4,9 @@ body {
 
     header{
         display:flex;
-       
+       flex-direction: row;
+       justify-content: space-between;
+       margin: 10px 20px 10px 20px;
         margin-top: 30px; 
     }
     
@@ -14,6 +16,12 @@ nav a:hover
     border-top: 3px  solid #0065FC;
     padding-top: 27px;
 }
+
+#bloc_recherche{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #entete,
 #ancres
 {
@@ -58,7 +66,7 @@ button{
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 8px;
-    width: 80px;
+    width: 81px;
     }
     .btnIcon 
     {
@@ -167,7 +175,7 @@ color: #0065FC;
     padding-right: 5px ;
     padding-left: 5px;
 }
-#conteneur p{
+#conteneur h3{
     padding-left: 20px;
 }
 .card1, .card2, .card3, .card4, .card5, .card6 {
@@ -241,6 +249,7 @@ color: #0065FC;
 }
 #conteneur a h3 {
     padding-left: 10px;
+
 }
 #conteneur a p {
     padding-left: 10px;
@@ -303,6 +312,7 @@ aside img {
     object-fit: cover;
     }
 
+
 section, aside{
     display: flex;
 }
@@ -328,18 +338,23 @@ color: black;
 
 }
 
-
-
 #stars7{
     color: #0065FC;
+    padding-bottom: 10px;
 }
-
+#stars8{
+    padding-bottom: 7px;
+}
 #stars8, #étoile36,#étoile37, #étoile38, #étoile39 {
     color: #0065FC;
+    
 }
 #stars8, #étoile40
 {
 color:#F2F2F2 ;
+}
+#stars9{
+    margin-top: 20px;
 }
 
 #stars9, #étoile41, #étoile42, #étoile43, #étoile44{
@@ -375,11 +390,13 @@ padding-left: 10px;
 .card7 #part2 p
 {
 line-height: 0px;
-padding-bottom: 30px;
+padding-bottom: 20px;
+margin-top: 0px;
 }
 .card7 #part2 h3
 {
-line-height: 0px;
+font-size: 1.1em;
+line-height: 15px;
 padding-bottom: 0px;
 }
 /*  mise en page du card8  */
@@ -391,11 +408,12 @@ padding-left: 10px;
 .card8 #part4 p
 {
 line-height: 0px;
-padding-bottom: 0px;
+padding-bottom: 10px;
+margin-top: 0px;
 
 }
 .card8 #part4 h3
-{
+{font-size: 1.1em;
 line-height: 20px;
 padding-bottom: 0px;
 }
@@ -407,11 +425,11 @@ padding-left: 10px;
 .card9 #part6 p
 {
 line-height: 0px;
-padding-bottom: 30px;
+margin-top: 0px;
 }
 .card9 #part6 h3
-{
-line-height: 0px;
+{font-size: 1.1em;
+line-height: 15px;
 padding-bottom: 0px;
 }
 
@@ -533,6 +551,11 @@ padding-bottom: 0px;
 
 section {
     margin-bottom: 50px;
+    margin-left: 15px;
+}
+#act h3{
+    margin-left: 15px;
+}
 }
 
 #à-propos{
@@ -555,6 +578,9 @@ footer{
     text-align: start;
     background-color:#F2F2F2 ;
 
+}
+#à-propos{
+    flex-direction: column;
 }
 
 footer ul li {
@@ -610,7 +636,7 @@ h4{
     border-bottom: 3px  solid #0065FC;
     padding-bottom: 12px;
     border-top: none;
-    padding-top: none;
+    
     padding-left: 33px;
     
 }
@@ -623,7 +649,7 @@ h4{
     form {
         border: solid 1px #e6e1e1;
         border-radius: 10px;
-        width: 350px;
+        width: 300px;
         height: 35px;
         padding: 0px;
         margin-left: 10px;
@@ -634,12 +660,12 @@ h4{
      button{
         border-radius: 10px;
         width: 40px;
-        margin-left: 170px;
+        margin-left: 100px;
         height: 36px;
         margin-bottom: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        padding top:0px ;
+        padding-top: 0px ;
         padding-right: 5px;
         
     }
@@ -668,6 +694,7 @@ h4{
       }
       #Recherche h1{
         padding-left: 15px;
+        font-size: 1.3em;
       }
     #rechercher
     {
@@ -681,26 +708,32 @@ h4{
         margin-left: 10px;
         margin-right: 10px;
     }
-    #information p
-{
-    text-align: justify;
-
-}
+    
+    #infor{
+        text-align:unset;
+        font-size: 0.9em;
+    }
 
     #Filtre
     {
         
     flex-direction: column;
-       
+    justify-content:left;
+    align-items: flex-start;
+  
+
     }
     #titre{
-        margin-right: 200px;
+        margin-left: 10px;
         margin-top: 30px;
         margin-bottom: 0px;
+        padding-left: 10px;
     }
        #liens ul{
     
         flex-wrap: wrap;
+        padding-left: 2px;
+        padding-right: 20px;
            }
 
            #information  {
@@ -725,34 +758,44 @@ h4{
        width: auto;
        flex-direction: column;
        margin-top: 0px;
+       margin-left: 5px;
    }
 
    #conteneur
 {
     flex-direction: column;
-    width: 365px;
-    height: 2000px;
+    width: 380px;
+    height: 1850px;
     background-color:white;
     border-radius: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-right: 5px ;
-    padding-left: 5px;
+    padding-left: 3px;
     flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+#conteneur h3{
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 1.3em;
 }
 
    #booking1{
-   width: auto;
-   height: 1000px;
+   width: 340px;
+   height: 900px;
    flex-direction: row;
    padding-bottom: 0px;
    }
    #booking2{
-    width: auto;
+    width: 340px;
+    height: 900px;
     flex-direction: row;
     
     }
     .card1, .card2, .card3, .card4, .card5, .card6 {
+    height: 270px;
     margin-bottom: 10px;
     margin-left: 0px;
     flex-grow: 1;
@@ -762,30 +805,39 @@ h4{
 
     #conteneur img {
    
-        width: 350px;  
-        height: 150px;
+        width: 330px;  
+        height: 130px;
     }
     section {
         flex-direction: column-reverse;
+        margin-left: 5px;
     }
     
    aside
    {
-       width: 355px;
+       width: 380px;
        margin-bottom: 5px;
        margin-top: 10px;
-       margin-left: 10px;
-       margin-right: 10px;
-       height: 650px;
+       margin-left: 1px;
+       margin-right: 5px;
+       height: 620px;
    }
-   #top-aside {
-       margin-left: 15px;
+   #top-aside p{
+       margin-left: 1px;
+       font-size: 1.1em;
+       text-align:left;
 
    }
+   #chart-line{
+       margin-right: 6px;
+   }
    .card7, .card8, .card9{
-       height: 180px;
+       height: 160px;
        margin-left: 5px;
        margin-right: 5px;
+       width: 350px;
+       margin-left: 15px;
+       
 
    }
 
@@ -798,15 +850,32 @@ h4{
     padding-top: 5px;
     justify-content: center;
     object-fit: cover;
-    height: 170px;
+    height: 150px;
+    width: 150px;
     }
 
     #stars7{
-        padding-top: 30px;
+        padding-top: 20px;
     }
     #stars8{
         padding-top: 30px;
     }
+    #stars9{
+        padding-top: 20px;
+    }
+    .card7 #part2 h3{
+        line-height: 20px;
+    }
+    #part2 p{
+        margin-top: 2px;
+    }
+    #part4 p{
+        margin-top: 2px;
+    }
+    #part6 p{
+        margin-top: 2px;
+    }
+
     .card9 #part6 h3
 {
 line-height: 20px;
@@ -819,7 +888,12 @@ padding-bottom: 0px;
  margin-bottom: 50px;
  width: auto;
  margin-bottom: 5px;
+ margin-left: 10px;
    
+}
+#act h3{
+    margin-left: 30px;
+    font-size: 1.3em;
 }
 
 .card10{
@@ -969,8 +1043,8 @@ footer
     width: auto;
     height: 450px;
     flex-direction: column;
-    padding-left: 0px;
-     margin-left: 0px;
+    padding-left: 15px;
+     margin-left: 20px;
      padding-bottom: 0px;
      text-align: start;
     }
@@ -1004,8 +1078,6 @@ h4{
     }
     body{
         width: auto;
-        margin: 0px;
-        padding: 0px;
     }
     #logo img{
        
@@ -1014,9 +1086,7 @@ h4{
     }
     #bloc_page
     {
-     margin: 0px;
-     padding: 0px; 
-     width: 700px; 
+     width: auto; 
     } 
     #entete
     {
@@ -1075,7 +1145,7 @@ h4{
         margin-bottom: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        padding top:0px ;
+        padding-top:0px ;
         padding-right: 5px;
         
     }
@@ -1124,7 +1194,7 @@ h4{
     margin-top: 25px;
     }
     #information p
-{F
+{
     text-align: justify;
     font-size: 1.8em;
 
